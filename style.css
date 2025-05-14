@@ -1,0 +1,525 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: "Kanit", sans-serif;
+    
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.top-nav {
+    display: flex;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px;
+    color: black;
+}
+
+.logo-top {
+    width: 10em;
+    height: auto;
+    margin-right: auto;
+    padding-left: 2em;
+}
+
+li,a,button {
+    font-family: "Kanit";
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+}
+
+.nav_links {
+    font-family: "Kanit", sans-serif;
+    list-style: none;
+    padding-right: 2em;
+}
+
+.nav_links li {
+    display: inline-flex;
+    padding: 0px 1em;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a {
+    color: black;
+    display: block;
+    padding: 10px 15px;
+    
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: blue;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li:hover ul.dropdown {
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li ul.dropdown {
+    background-color: #f9f9f9;
+    color: black;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 40px;
+    width: 150px; /* กำหนดความกว้างที่ต้องการ */
+    z-index: 999;
+    transition: all 0.3s ease 0s;
+    min-width: max-content; /* ป้องกันไม่ให้แคบกว่าเนื้อหา */
+}
+
+.nav_links li ul.dropdown li {
+    display: block; /* เปลี่ยนเป็น block เพื่อให้กินเต็มความกว้าง */
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li ul.dropdown li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%; /* ให้ Link กว้างเท่ากับ List Item */
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav_links li ul.dropdown li a:hover {
+    color: blue;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li ul.dropdown li:hover {
+    color: blue;
+    transition: all 0.3s ease 0s;
+}
+
+button{
+    padding: 19px 50px;
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+.main-hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.f-img{
+    width: 100%;
+    border: 15px;
+    border-radius: 15px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+
+/*Benefit headline*/
+.benefit {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    flex-direction: column;
+
+}
+.benefit-hl {
+    text-align: center;
+
+}
+.bnf-hl {
+
+    font-weight: 500;
+    font-size: 60px;
+    color: #333;
+}
+.bnf-sub-hl {
+
+    color: #4b4b4b;
+    font-weight: 300;
+    font-size: 30px;
+}
+.benefit-box{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.benefit1 {
+    width: 20%;
+    text-align: center;
+    padding: 2rem;
+}
+.bnf-shl{
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+.benefit1 p{
+    font-weight: 400;
+}
+.benefit-icon img{
+    width: 2rem;
+    height: auto;
+    justify-content: center;
+}
+/*Benefit headline*/
+
+
+
+
+
+
+
+
+/*ช่วง*/
+
+
+.img2{
+    height: auto;
+    width: 100%;
+}
+
+.img6 {
+    width: 100%;
+    height: auto;
+    border: 15px;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5em;
+}
+.sub0hero{
+    width: 30em;
+}
+.sub0hero img{
+    border-radius: 15px;
+}
+.sub1hero {
+    padding-left: 4rem;
+    width: 40em;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.sub1hero h3 {
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+.a-hl {
+    color: green;
+}
+.sub1hero p {
+    color: rgb(27, 27, 27);
+}
+
+.sub1hero sub-btn{
+    margin: 0 auto;
+    justify-content: center;
+}
+
+sub-btn{
+    padding: 19px 50px;
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+sub-btn:hover {
+    background-color: antiquewhite;
+}
+
+/*ช่วง*/
+
+.product-hero {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.nano {
+    padding: 5px;
+    width: 25em;
+    text-align: center;
+    border: 1px;
+    border: #333;
+}
+
+.nano h4{
+    padding-top: 1rem;
+}
+
+.img3{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/*Section 4*/
+.ttmn-hd{
+    padding-top: 3em;
+    font-size: 30px;
+    font-weight: 600;
+    color: green;
+}
+.ttmn {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 2em 6em ;
+}
+.ttmn-img{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 2em 6em ;
+}
+
+.ttmn-pic {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    width: 50%;
+}
+.ttmn-ob{
+    display: flex;
+}
+.imgq {
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+}
+
+
+
+
+/*Footer*/
+
+.foot-ter {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+    padding-top: 2em;
+}
+.f-container{
+    width: 27em;
+    background-color: green;
+    padding: 2rem;
+    color: white;
+    font-size: 16px;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 5em;
+}
+
+.f-container li {
+    background-color: green;
+    color: white;
+}
+
+.f-container p {
+    color: white;
+    background-color: green;
+}
+
+.ch {
+    background-color: green;
+    padding: 2rem;
+   
+}
+
+.f-container-l {
+    margin-left: 0;
+}
+
+/*หน้านาโนไฟแนนซ์*/
+/*punch-line*/
+.hd-pl {
+    padding-top: 2em;
+    text-align: center;
+    color: green;
+    padding-bottom: 2em;
+}
+
+.sec-pl {
+    display: flex;
+    padding: 2em;
+    justify-content: space-around;
+    
+}
+.box-pl {
+    width: 20em;
+    padding: 2em;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.box-pl h3{
+    background-color: green;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*จบ punch-line*/
+
+/*requirement*/
+.req-nano {
+    display: flex;
+    justify-content: center;
+}
+.os-req-box {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 2em;
+}
+
+.req-box{
+    padding: 1em;
+}
+.req-box img{
+    width: 17em;
+    height: auto;
+    
+}
+
+.req-info {
+    width: 30%;
+    padding-top: 3em;
+    
+}
+
+.req-info h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+/*จบrequirement*/
+
+/*หน้านาโนไฟแนนซ์*/
+
+
+/*หน้าจำลองค่างวด*/
+.calculate {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดกึ่งกลางเนื้อหาในแนวนอน */
+    padding: 20px;
+    font-family: sans-serif; /* เลือกฟอนต์ที่เหมาะสม */
+}
+
+.calculate h1{
+    padding-bottom: 20px;
+}
+
+.calculate-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* ระยะห่างระหว่าง element */
+    width: 300px; /* กำหนดความกว้างของกล่องคำนวณ */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.input-group input[type="number"],
+.input-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* ทำให้ขอบมน */
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50; /* สีเขียว */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px; /* ทำให้ขอบมน */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* เพิ่ม transition เมื่อ hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result-group {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-group p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#monthlyPayment {
+    font-size: 30px;
+    color: #007bff; /* สีน้ำเงินสำหรับผลลัพธ์ */
+}
+
+
+/*หน้าจำลองค่างวด*/
